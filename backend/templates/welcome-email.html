@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Learning Management System</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        background-color: #f8fafc;
+        font-family: "Poppins", sans-serif;
+        color: #334155;
+        line-height: 1.6;
+      }
+
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #e2e8f0;
+      }
+
+      .email-header {
+        padding: 32px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #16a34a, #059669);
+        color: white;
+      }
+
+      .email-header h1 {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 16px 0 0;
+        color: white;
+        letter-spacing: 0.5px;
+      }
+
+      .email-body {
+        padding: 32px 30px;
+      }
+
+      .email-body h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #16a34a;
+        margin-top: 0;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 8px;
+      }
+
+      .email-body p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #475569;
+      }
+
+      .welcome-banner {
+        text-align: center;
+        margin: 30px 0;
+        padding: 25px;
+        background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+        border-radius: 12px;
+        border: 2px solid #16a34a;
+      }
+
+      .welcome-banner h3 {
+        font-size: 24px;
+        color: #16a34a;
+        margin: 0 0 10px;
+        font-weight: 600;
+      }
+
+      .welcome-banner p {
+        font-size: 16px;
+        color: #059669;
+        margin: 0;
+        font-weight: 500;
+      }
+
+      .button-container {
+        text-align: center;
+        margin: 28px 0;
+      }
+
+      .primary-button {
+        background: linear-gradient(135deg, #16a34a, #059669);
+        color: #ffffff;
+        padding: 14px 28px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 500;
+        display: inline-block;
+        transition: all 0.3s ease;
+        font-size: 16px;
+      }
+
+      .primary-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+      }
+
+      .feature-list {
+        background-color: #f8fafc;
+        border-left: 4px solid #16a34a;
+        padding: 20px;
+        margin: 25px 0;
+        border-radius: 0 8px 8px 0;
+      }
+
+      .feature-list h4 {
+        color: #16a34a;
+        margin: 0 0 15px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .feature-list ul {
+        margin: 0;
+        padding-left: 20px;
+        color: #475569;
+      }
+
+      .feature-list li {
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+
+      .email-footer {
+        padding: 24px;
+        text-align: center;
+        font-size: 13px;
+        color: #64748b;
+        background-color: #f1f5f9;
+        border-top: 1px solid #e2e8f0;
+      }
+
+      .email-footer p {
+        margin: 8px 0;
+        line-height: 1.5;
+      }
+
+      .team-signature {
+        margin-top: 24px;
+        color: #16a34a;
+        font-weight: 500;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .email-header {
+          padding: 24px 15px;
+        }
+
+        .email-header h1 {
+          font-size: 20px;
+        }
+
+        .email-body {
+          padding: 24px 20px;
+        }
+
+        .welcome-banner h3 {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table class="email-container" cellpadding="0" cellspacing="0" border="0" align="center">
+      <tr>
+        <td>
+          <div class="email-header">
+            <h1>Learning Management System</h1>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="email-body">
+            <h2>Welcome to Your Learning Journey!</h2>
+            
+            <div class="welcome-banner">
+              <h3>🎉 Welcome {{userName}}!</h3>
+              <p>Your account has been successfully verified</p>
+            </div>
+            
+            <p>Congratulations! You've successfully joined our Learning Management System. We're excited to have you as part of our learning community.</p>
+
+            <p>Your account is now active and ready to use. You can start exploring our courses, track your progress, and begin your educational journey right away.</p>
+
+            <div class="button-container">
+              <a href="{{dashboardUrl}}" class="primary-button">Start Learning Now</a>
+            </div>
+
+            <div class="feature-list">
+              <h4>What you can do now:</h4>
+              <ul>
+                <li>Browse and enroll in courses</li>
+                <li>Track your learning progress</li>
+                <li>Access course materials and resources</li>
+                <li>Connect with instructors and fellow learners</li>
+                <li>Earn certificates upon course completion</li>
+              </ul>
+            </div>
+
+            <p>If you have any questions or need assistance getting started, our support team is here to help. Simply reply to this email or contact us through the platform.</p>
+
+            <p>Happy learning!<br />The Learning Management System Team</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="email-footer">
+            <p>&copy; {{year}} Learning Management System. All Rights Reserved.</p>
+            <p>Need help? Contact us at support@lms.com</p>
+            <p class="team-signature">LMS Team</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
